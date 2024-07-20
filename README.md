@@ -103,4 +103,4 @@ For any inquiries or further information, please contact [kashifshareef04@gmail.
 
 ---
 
-This README provides a comprehensive overview of the project, highlights the technologies used, and outlines how to get started, use the application, and contribute to it. It’s designed to present your skills and the professionalism of the project in a clear and engaging manner.
+This README provides a comprehensive overview of the project, highlights the technologies used, and outlines how to get started, use the application, and contribute to it.
