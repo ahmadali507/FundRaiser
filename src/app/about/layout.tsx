@@ -2,8 +2,8 @@
 // Learn more: https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required
 import { Manrope } from 'next/font/google'
 import { cn } from '@/lib/utils'
-import './globals.css'
-import { Toaster } from 'sonner'
+import '../globals.css'
+import React from 'react'
 
 const fontHeading = Manrope({
   subsets: ['latin'],
@@ -28,7 +28,6 @@ export default function Layout({ children } : {children : React.ReactNode}) {
         )}
       >
         {children}
-        <Toaster/>
       </body>
     </html>
   )

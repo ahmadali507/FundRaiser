@@ -1,0 +1,1 @@
+export {default as fundraiser} from 'fundraiser.jpg'
