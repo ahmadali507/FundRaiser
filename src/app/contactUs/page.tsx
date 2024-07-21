@@ -51,7 +51,7 @@ export default function Component() {
       <Card className="w-full max-w-md mx-auto bg-black bg-opacity-50 backdrop-blur-lg text-white">
         <CardHeader>
           <CardTitle className="text-white">Contact Us</CardTitle>
-          <CardDescription className="text-gray-400">Fill out the form below and we'll get back to you as soon as possible.</CardDescription>
+          <CardDescription className="text-gray-400">Fill out the form below and we will get back to you as soon as possible.</CardDescription>
         </CardHeader>
         <CardContent>
           <form className="space-y-4" onSubmit={handleSubmit}>
