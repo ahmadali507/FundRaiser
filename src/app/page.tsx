@@ -35,7 +35,7 @@ export default function Component() {
                     <DialogBox/>
                   </Link>
                   <Link
-                    href="#"
+                    href="/about"
                     className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-gray-800 px-8 text-sm font-medium text-gray-200 shadow-sm transition-colors hover:bg-gray-700 hover:text-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
@@ -147,19 +147,13 @@ export default function Component() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link
-                  href="#"
+                  href="/contactUs"
                   className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                   prefetch={false}
                 >
                   Volunteer
                 </Link>
-                <Link
-                  href="#"
-                  className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-gray-700 px-8 text-sm font-medium text-gray-200 shadow-sm transition-colors hover:bg-gray-600 hover:text-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                  prefetch={false}
-                >
-                  Donate
-                </Link>
+                <DialogBox/>
               </div>
             </div>
           </div>
@@ -242,16 +236,16 @@ export default function Component() {
           </div>
           <div className="grid gap-1">
             <h3 className="font-semibold text-white">Connect</h3>
-            <Link href="#" prefetch={false} className="text-gray-300">
+            <Link href="http://www.facebook.com" prefetch={false} className="text-gray-300">
               Facebook
             </Link>
-            <Link href="#" prefetch={false} className="text-gray-300">
+            <Link href="http://www.twitter.com" prefetch={false} className="text-gray-300">
               Twitter
             </Link>
-            <Link href="#" prefetch={false} className="text-gray-300">
+            <Link href="http://www.instagram.com" prefetch={false} className="text-gray-300">
               Instagram
             </Link>
-            <Link href="#" prefetch={false} className="text-gray-300">
+            <Link href="http://www.linkedin.com" prefetch={false} className="text-gray-300">
               LinkedIn
             </Link>
           </div>

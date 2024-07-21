@@ -1,7 +1,6 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 import nodemailer, { Transporter } from 'nodemailer';
-
 // Handler for POST requests
 export async function POST(req: NextRequest) {
   const { firstName, lastName, email, message } = await req.json();
@@ -19,7 +18,7 @@ export async function POST(req: NextRequest) {
   const mailOptions = {
     from: email,
     to: process.env.OWNER_EMAIL, // The email address of the website owner
-    subject: `Contact form submission from ${firstName} ${lastName}`,
+    subject: `Email from the fundraising User ${firstName} ${lastName}`,
     text: message,
   };
 

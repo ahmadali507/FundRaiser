@@ -7,6 +7,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useRouter } from 'next/navigation';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Link from 'next/link';
+import Navbar from '@/components/mainComponents/Navbar';
 
 export default function Component() {
   const [formData, setFormData] = useState({
@@ -31,15 +35,18 @@ export default function Component() {
       const response = await axios.post('/api/sendEmail', formData);
       if (response.status === 200) {
         setStatus('Email sent successfully!');
-        route.push('/'); 
+        toast.success('Email sent successfully!');
       }
     } catch (error) {
       console.error(error);
       setStatus('Failed to send email.');
+      toast.error('Failed to send email.');
     }
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="container bg-black w-full h-[100vh] flex items-center justify-center">
       <Card className="w-full max-w-md mx-auto bg-black bg-opacity-50 backdrop-blur-lg text-white">
         <CardHeader>
@@ -73,6 +80,21 @@ export default function Component() {
           {status && <p className="text-center text-white mt-4">{status}</p>}
         </CardContent>
       </Card>
+      <ToastContainer />
     </div>
+      <footer className="bg-primary text-primary-foreground py-6">
+        <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+          <p className="text-sm">&copy; 2024 Hope For All. All rights reserved.</p>
+          <nav className="flex items-center gap-4">
+            <Link href="#" className="hover:underline" prefetch={false}>
+              Privacy Policy
+            </Link>
+            <Link href="#" className="hover:underline" prefetch={false}>
+              Terms of Service
+            </Link>
+          </nav>
+        </div>
+      </footer>
+    </>
   );
 }
